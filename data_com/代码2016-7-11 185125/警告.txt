@@ -1,0 +1,10 @@
+警告分析
+
+1.[Synth 8-3332] Sequential element (\save_f[0].i_save/blk_ram_f[0].blk_ram/output_register.douta_reg_reg[16] ) is unused and will be removed from module data_com.
+信号宽度大于实际用到的宽度，导致该信号高位一直为0，因此无效，被移除。
+
+2.[Synth 8-3848] Net addra in module/entity data_com does not have driver. ["C:/Users/Pan/Documents/IC/Train/data_compose/code/rtl/data_com.v":161]
+信号在该配置下，没有被用到，因此无驱动，不影响结果。
+
+3.[Synth 8-3295] tying undriven pin \save_f[0].i_save :addra_s[3] to constant 0 ["C:/Users/Pan/Documents/IC/Train/data_compose/code/rtl/data_com.v":287]
+信号在该配置下，没有被用到，因此无驱动，不影响结果。
